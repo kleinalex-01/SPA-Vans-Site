@@ -43,6 +43,43 @@
     background: url(../public/Images/aboutpage-bg.png) no-repeat center center/cover;
     height: 300px;
 }
+.filter-btn {
+    background-color: #FFCC8D;
+    transition: all 0.2s ease-in-out;
+}
+.filter-btn:hover {
+    background-color: #FF8C38;
+    scale: 1.1;
+}
+.filter-btn:active {
+    scale: 0.9;
+}
+.filter {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.filter:hover {
+    transform: scale(1.1);
+}
+.filter:active {
+    transform: scale(0.9);
+}
+/*Van Cards*/
+.van-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+.van-img {
+    max-width: 100%;
+    height: auto;
+}
+.rent-btn {
+    bottom: 50px;
+}
 /*Universal Footer*/
 .footer {
     background-color: #252525;
