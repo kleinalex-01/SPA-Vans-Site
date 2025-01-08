@@ -1,0 +1,52 @@
+/*Universal NavBar*/
+.navbar {
+    padding: 30px;
+    background-color: #FFF7ED;
+}
+.primary-color {
+    color: #4D4D4D;
+}
+.container .h1 {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.5rem;
+    padding: 0;
+}
+.container .h1:hover {
+    text-decoration: underline;
+}
+/*HomePage Hero Section*/
+.home-hero {
+    background: url(../public/Images/homepage-bg.png) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+.home-hero a {
+    background-color: #FF8C38;
+    color: #FFFFFF;
+}
+.home-hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px;
+  }
+/*About Hero Section*/
+.explore-van-btn {
+    background-color: #161616;
+    color: #FFFFFF;
+    width: 50%;
+}
+.about-van-btn-container {
+    background-color: #FFCC8D;
+}
+.img-container {
+    background: url(../public/Images/aboutpage-bg.png) no-repeat center center/cover;
+    height: 300px;
+}
+/*Universal Footer*/
+.footer {
+    background-color: #252525;
+    color: #AAAAAA;
+    text-align: center;
+    padding: 30px;
+  }
