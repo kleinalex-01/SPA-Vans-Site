@@ -1,3 +1,10 @@
+/*Universal Styles*/
+.trans-hover {
+    transition: all 0.3s ease-in-out;
+}
+.trans-hover:active {
+    scale: 0.9;
+}
 /*Universal NavBar*/
 .navbar {
     padding: 30px;
@@ -76,6 +83,7 @@
 .van-img {
     max-width: 100%;
     height: auto;
+    background: url(./Components/placeholder-img.jpg) no-repeat center center/cover;
 }
 .rent-btn {
     bottom: 50px;

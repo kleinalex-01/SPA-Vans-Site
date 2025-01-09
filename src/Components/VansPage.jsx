@@ -1,7 +1,7 @@
 import react from "react";
 import Van from "./Van";
 
-export default function VansPage() {
+export default function VansPage({ vans , setVans}) {
     return (
         <>
         <nav class="navbar">
@@ -24,7 +24,7 @@ export default function VansPage() {
                     <button class="btn filter m-3 bg-transparent border-0">Clear filters</button>
                 </div>
                 <div className="van-card-grid">
-                    <Van />
+                    <Van vans={vans} setVans={setVans}/>
                 </div>
             </div>
         </div>
