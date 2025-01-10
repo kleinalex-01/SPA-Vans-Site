@@ -1,47 +1,73 @@
-/*Universal Styles*/
-.trans-hover {
-    transition: all 0.3s ease-in-out;
-}
-.trans-hover:active {
-    scale: 0.9;
-}
 /*Universal NavBar*/
 .navbar {
     padding: 30px;
     background-color: #FFF7ED;
 }
-.primary-color {
-    color: #4D4D4D;
+.text-color-dark {
+    color: #161616;
 }
-.container .h1 {
-    font-weight: bold;
-    color: #000000;
-    font-size: 1.5rem;
-    padding: 0;
+#vanlife-container {
+    transition: all 0.2s ease-in-out;
 }
-.container .h1:hover {
+#vanlife-container:hover {
+    scale: 1.1;
     text-decoration: underline;
+    text-underline-offset: 5px;
 }
+#vanlife-container:active {
+    scale: 0.9;
+}
+#nav-elements-container {
+    transition: all 0.2s ease-in-out;
+}
+.nav-elements-container {
+    transition: all 0.2s ease-in-out;
+}
+.nav-elements-container:hover {
+    font-size: 1.2rem;
+}
+.nav-elements-container:active {
+    font-size: 0.9rem;
+}
+
+
 /*HomePage Hero Section*/
-.home-hero {
+.home-hero-section {
     background: url(../public/Images/homepage-bg.png) no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 80px 20px;
   }
-.home-hero a {
+.home-hero-section a {
     background-color: #FF8C38;
     color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+.home-hero-section a:hover {
+    scale: 1.1;
+}
+.home-hero-section a:active {
+    scale: 0.9;
 }
 .home-hero-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 60px;
-  }
+}
+
+
 /*About Hero Section*/
 .explore-van-btn {
     background-color: #161616;
     color: #FFFFFF;
     width: 50%;
+    transition: all 0.2s ease-in-out;
+}
+.explore-van-btn:hover {
+    scale: 1.1;
+    border: solid 1px black;
+}
+.explore-van-btn:active {
+    scale: 0.9;
 }
 .about-van-btn-container {
     background-color: #FFCC8D;
@@ -50,6 +76,8 @@
     background: url(../public/Images/aboutpage-bg.png) no-repeat center center/cover;
     height: 300px;
 }
+
+
 .filter-btn {
     background-color: #FFCC8D;
     transition: all 0.2s ease-in-out;
@@ -72,21 +100,48 @@
 .filter:active {
     transform: scale(0.9);
 }
+
+
 /*Van Cards*/
-.van-card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
+#van-card-container {
+    border: solid 1px #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .van-img {
     max-width: 100%;
     height: auto;
+    border: solid 1px #ddd;
     background: url(./Components/placeholder-img.jpg) no-repeat center center/cover;
 }
-.rent-btn {
-    bottom: 50px;
+.simple-color {
+    background-color: #ff5656;
+}
+.luxury-color {
+    background-color: #dafe38;
+}
+.rugged-color {
+    background-color: #b1b1b1;
+}
+#van-img-container {
+    padding : 30px;
+    padding-bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#van-info-container {
+    padding: 30px;
+
+}
+.rent-van-big {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 /*Universal Footer*/
 .footer {
