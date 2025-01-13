@@ -109,11 +109,30 @@
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+.van-card {
+    transition: all 0.2s ease-in-out;
+}
+.van-card-van-text-decor {
+    color: #161616;
+}
+.van-card:hover {
+    scale: 1.1;
+}
+.van-card:active {
+    scale: 0.9;
+}
+.van-card-type-bg {
+    transition: all 0.2s ease-in-out;
+}
+.van-card-type-bg:hover {
+    background-color: green;
+}
 .van-img {
     max-width: 100%;
     height: auto;
     border: solid 1px #ddd;
     background: url(./Components/placeholder-img.jpg) no-repeat center center/cover;
+    margin-bottom: 30px;;
 }
 .simple-color {
     background-color: #ff5656;
@@ -124,17 +143,18 @@
 .rugged-color {
     background-color: #b1b1b1;
 }
+.van-price-info {
+width: 40%;
+}
+
+/*Van Type Page*/
 #van-img-container {
     padding : 30px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-}
-#van-info-container {
-    padding: 30px;
-
 }
 .rent-van-big {
     width: 80%;
@@ -143,6 +163,21 @@
     display: flex;
     justify-content: center;
 }
+.rent-btn {
+    transition: all 0.2s ease-in-out;
+    border: 1px #161616 solid;
+    background-color: lightgreen;
+}
+.rent-btn:hover {
+    scale: 1.1;
+    border: 1px #161616 solid;
+
+}
+.rent-btn:active {
+    scale: 0.9;
+
+}
+
 /*Universal Footer*/
 .footer {
     background-color: #252525;
