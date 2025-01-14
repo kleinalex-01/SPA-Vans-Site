@@ -176,7 +176,6 @@ width: 40%;
 }
 .rent-btn:active {
     scale: 0.9;
-
 }
 
 /*Host Page Styles*/
@@ -205,6 +204,42 @@ width: 40%;
     margin-right: 45px;
     font-weight: bold;
 }
+.dash-welcome-section {
+    background-color: #FFEAD0;
+}
+.dash-money-count {
+    font-size: 3rem;
+}
+.dash-review-container {
+    background-color: #FFDDB2;
+}
+.dash-review-container p {
+    position: relative;
+    top: 10px;
+}
+.dash-van-list {
+    background-color: #FFF7ED;
+}
+.van-img-list-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    width: 50%;
+}
+.van-list-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.list-item-info {
+    width: 50%;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
 /*Universal Footer*/
 .footer {
     background-color: #252525;

@@ -1,19 +1,21 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { React ,useState, useEffect } from 'react';
-import HomePage from './Components/HomePage';
-import AboutPage from './Components/AboutPage';
-import VansPage from './Components/VansPage';
-import VanType from './Components/VanType.jsx';
-import Layout from './Components/Layout.jsx';
-import Dashboard from './Components/Dashboard.jsx';
-import Income from './Components/Income.jsx';
-import DashVans from './Components/DashVans.jsx';
-import Reviews from './Components/Reviews.jsx';
+import HomePage from './Components/HomePage/HomePage.jsx';
+import AboutPage from './Components/HomePage/AboutPage.jsx';
+import VansPage from './Components/HomePage/VansPage';
+import VanType from './Components/HomePage/VanType.jsx';
+import Layout from './Components/Host/Layout.jsx';
+import Host from './Components/Host/Host.jsx';
+import Income from './Components/Host/Income.jsx';
+import DashVans from './Components/Host/DashVans.jsx';
+import Reviews from './Components/Host/Reviews.jsx';
+import Dashboard from './Components/Host/Dashboard.jsx';
 import "./App.css"
 import "./server.js"
 
 function App() {
       const [vans, setVans] = useState([]);
+      const [rentedVan, setRentedVan] = useState([]);
       const [loading, setLoading] = useState(true);
       const [error, setError] = useState(null);
 
@@ -52,11 +54,12 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/About" element={<AboutPage />} />
             <Route path="/Vans" element={<VansPage vans={vans} setVans={setVans} />} />
-            <Route path="/Vans/:id" element={<VanType vans={vans}/>} />
+            <Route path="/Vans/:id" element={<VanType vans={vans} rentedVan={rentedVan} setRentedVan={setRentedVan}/>} />
 
-            <Route path="/Host" element={<Dashboard />}>
+            <Route path="/Host" element={<Host />}>
+              <Route path="Dashboard" element={<Dashboard vans={vans} rentedVan={rentedVan} setRentedVan={setRentedVan}/>} />
               <Route path="Income" element={<Income />} />
-              <Route path='Vans' element={<DashVans />} />
+              <Route path='Vans' element={<DashVans vans={vans} rentedVan={rentedVan} setRentedVan={setRentedVan} />} />
               <Route path="Reviews" element={<Reviews />} />
             </Route>
           </Route>
