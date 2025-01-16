@@ -60,6 +60,8 @@ function App() {
               <Route path="Dashboard" element={<Dashboard vans={vans} rentedVan={rentedVan} setRentedVan={setRentedVan}/>} />
               <Route path="Income" element={<Income />} />
               <Route path='Vans' element={<DashVans vans={vans} rentedVan={rentedVan} setRentedVan={setRentedVan} />} />
+                <Route path='Vans/:id' element={<VanType vans={vans} rentedVan={rentedVan} setRentedVan={setRentedVan}/>} >
+              </Route>
               <Route path="Reviews" element={<Reviews />} />
             </Route>
           </Route>

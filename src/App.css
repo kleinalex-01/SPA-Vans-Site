@@ -239,6 +239,19 @@ width: 40%;
     padding: 5px;
     flex-wrap: wrap;
 }
+/*Income page styles*/
+.income-container {
+    background-color: #FFF7ED;
+}
+.transaction-container {
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    height: 50px;
+}
+.transaction-container-outer {
+    position: relative;
+    margin: 0 auto;
+}
 
 /*Universal Footer*/
 .footer {

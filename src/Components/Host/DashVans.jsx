@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function DashVans({ vans, rentedVan, setRentedVan }) {
     const rentedVans = rentedVan.map((van, index) => (
+        <Link to={`/Host/Vans/${van.id}`} className="text-decoration-none">
         <div className="col-12 p-2" key={index}>
             <div className="bg-light p-0">
                 <div className="border container-fluid d-flex align-items-center">
@@ -16,6 +17,7 @@ export default function DashVans({ vans, rentedVan, setRentedVan }) {
                 </div>
             </div>
         </div>
+        </Link>
     ));
     return (
         <>
