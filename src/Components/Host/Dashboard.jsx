@@ -13,7 +13,7 @@ export default function Dashboard( { vans, rentedVan } ) {
                         <p className="fw-bold fs-5">{van.price}$/day</p>
                     </div>
                     <div className="container d-flex justify-content-end">
-                        <Link to={`/Host/Vans/${van.id}`}>Edit</Link>
+                        <Link to={`/Host/Vans/${van.id}`} class="text-color-dark link-hover">Edit</Link>
                     </div>
                 </div>
             </div>
@@ -26,8 +26,8 @@ export default function Dashboard( { vans, rentedVan } ) {
                 <div class="col-12 p-4 dash-welcome-section">
                     <h1 class="fw-bold">Welcome!</h1>
                         <div class="d-flex justify-content-between">
-                            <p>Income last <Link to={"/Host/Income"}>30 days</Link></p>
-                            <Link to={"/Host/Income"}>Details</Link>
+                            <p>Income last <Link to={"/Host/Income"} class=" text-color-dark link-hover">30 days</Link></p>
+                            <Link to={"/Host/Income"} class=" text-color-dark link-hover">Details</Link>
                         </div>
                     <h1 class="fw-bold dash-money-count">$1234</h1>
                 </div>
@@ -35,14 +35,14 @@ export default function Dashboard( { vans, rentedVan } ) {
             <div class="row g-0">
                 <div class="col-12 d-flex justify-content-between p-4 dash-review-container">
                     <p class="fs-5 fw-semibold">Review score ,rating here,</p>
-                    <Link to={"/Host/Reviews"}>Details</Link>
+                    <Link to={"/Host/Reviews"} class=" text-color-dark link-hover">Details</Link>
                 </div>
             </div>
             <div class="row g-0">
                 <div class="col-12 p-4 dash-van-list">
                     <div class="d-flex justify-content-between mb-4">
                         <h3 class="fs-4">Your listed Vans</h3>
-                        <Link to={"/Host/Vans"}>View all</Link>
+                        <Link to={"/Host/Vans"} class=" text-color-dark link-hover">View all</Link>
                     </div>
                     <div className="row" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px' }}>
                         {rentedVans}
